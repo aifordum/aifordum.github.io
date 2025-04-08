@@ -2,12 +2,19 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="./assets/favicon.ico">
+  <meta property="og:title" content="Aiero">
+  <meta name="description" content="Aiero致力于打造全网最好的ai情感交流聊天平台，于2024年8月1日正式上线，以安全，自由，流畅为主打，要给用户最好的交流体验">
+  <meta property="og:description" content="Aiero致力于打造全网最好的ai情感交流聊天平台，于2024年8月1日正式上线，以安全，自由，流畅为主打，要给用户最好的交流体验">
+  <meta name="twitter:title" content="Aiero">
+  <meta name="twitter:description" content="Aiero致力于打造全网最好的ai情感交流聊天平台，于2024年8月1日正式上线，以安全，自由，流畅为主打，要给用户最好的交流体验">
   <title>AI风月不迷路</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
       background-color: #F0F0F0;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
@@ -16,10 +23,12 @@
 
     .bg-img {
       width: 100%;
+      height: 100%;
       position: fixed;
       inset: 0;
       object-fit: cover;
       object-fit: cover;
+      z-index: -1;
     }
 
     .container {
@@ -68,42 +77,76 @@
     a:hover {
       background-color: #45A049;
     }
+
+    .description {
+      font-size: 32px;
+      color: transparent;
+      text-align: center;
+      background: linear-gradient(90deg, #ff00ff, #00ffff, #ff00ff);
+      background-clip: text;
+      -webkit-background-clip: text;
+      text-shadow:
+        0 0 10px rgba(255, 0, 255, 0.5),
+        0 0 20px rgba(0, 255, 255, 0.5);
+      animation: glow 2s ease-in-out infinite;
+    }
+
+    @keyframes glow {
+      50% {
+        text-shadow:
+          0 0 20px rgba(255, 0, 255, 0.8),
+          0 0 30px rgba(0, 255, 255, 0.8);
+      }
+    }
   </style>
 </head>
 
 <body>
   <img class="bg-img" src="./assets/hot-5.png" alt="">
   <div class="container">
-    <div class="logo"><img src="https://aiporn.tw/logo/logo-site.png" alt="AI风月Logo"></div>
+    <div class="logo">
+      <img src="./assets/favicon.ico" alt="AI风月Logo">
+    </div>
     <h1>AI风月不迷路</h1>
     <p>以下是备用网站链接，防止网站无法访问：</p>
-    <a id="link1" href="https://aiporn.tw/signup?ref_id=17ec330d-22f6-4b21-95d3-d749a0bf1178" target="_blank">AI风月 -
-      节点1</a>
-    <a id="link2" href="https://aifuck.cc/signup?ref_id=17ec330d-22f6-4b21-95d3-d749a0bf1178" target="_blank">AI风月 -
-      节点2</a>
-    <a id="link3" href="https://aifun.wiki/signup?ref_id=17ec330d-22f6-4b21-95d3-d749a0bf1178" target="_blank">AI风月 -
-      节点3</a>
-
+    <a class="link" id="link1" href="https://aitrader.wiki" target="_blank">
+      AI风月 - 节点1
+    </a>
+    <a class="link" id="link2" href="https://acepro.store" target="_blank">
+      AI风月 - 节点2
+    </a>
+    <a class="link" id="link3" href="https://aifun.wiki" target="_blank">
+      AI风月 - 节点3
+    </a>
+    <a class="link" id="link4" href="https://aifuck.cc" target="_blank">
+      AI风月 - 节点4
+    </a>
+    <a class="link" id="link5" href="https://aiporn.tw" target="_blank">
+      AI风月 - 节点5
+    </a>
   </div>
+  <p class="description">
+    最大的中文AI色情聊天平台
+    <br>
+    作品多样性全网最丰富，任何XP都能满足！
+  </p>
   <script>
     // 获取 URL 查询参数
     const queryParams = new URLSearchParams(window.location.search);
     // 判断是否存在 ref_id 参数
     const hasRefId = queryParams.has('ref_id');
     const refId = queryParams.get('ref_id');
-    // 动态设置备用链接的跳转路径
-    const link1 = document.getElementById('link1');
-    const link2 = document.getElementById('link2');
-    const link3 = document.getElementById('link3');
-    if (hasRefId) {
-      link1.href = `https://aiporn.tw/signup?ref_id=${refId}`;
-      link2.href = `https://aifuck.cc/signup?ref_id=${refId}`;
-      link3.href = `https://aifun.wiki/signup?ref_id=${refId}`;
-    } else {
-      link1.href = 'https://aiporn.tw/signin';
-      link2.href = 'https://aifuck.cc/signin';
-      link3.href = 'https://aifun.wiki/signin';
+
+    const links = document.getElementsByClassName('link');
+    for (let i = 0; i < links.length; i++) {
+      const link = links[i];
+      if (hasRefId) {
+        link.href = `${link.href}signup?ref_id=${refId}`;
+      } else {
+        link.href = `${link.href}signin`;
+      }
     }
+
   </script>
 
 

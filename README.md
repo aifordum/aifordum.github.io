@@ -1,1 +1,1 @@
-![guide](./src/index.html)
+![guide](./index.html)

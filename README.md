@@ -1,7 +1,14 @@
 <h3 align="center">AI 风月</h3>
 <p>最大的中文AI色情聊天平台，作品多样性全网最丰富，任何XP都能满足！</p>
 
-![AI风月不迷路](./assets/hot-5.png)
+<div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+  <img src="./assets/img-1.png" width="50%">
+  <img src="./assets/img-2.png" width="50%">
+  <img src="./assets/img-3.png" width="50%">
+  <img src="./assets/img-4.png" width="50%">
+  <img src="./assets/img-5.png" width="50%">
+  <img src="./assets/img-6.png" width="50%">
+</div>
 
 AI 风月 致力于打造全网最好的 ai 情感交流聊天平台，于 2024 年 8 月 1 日正式上线，以安全，自由，流畅为主打，要给用户最好的交流体验!
 

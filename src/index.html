@@ -1,0 +1,112 @@
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>AI风月不迷路</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #F0F0F0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .bg-img {
+      width: 100%;
+      position: fixed;
+      inset: 0;
+      object-fit: cover;
+      object-fit: cover;
+    }
+
+    .container {
+      text-align: center;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      top: -60px;
+      left: calc(50% - 60px);
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .logo img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 2em;
+      margin-top: 70px;
+      /* 调整标题位置以避免与图片重叠 */
+    }
+
+    a {
+      display: block;
+      margin: 15px 0;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: white;
+      background-color: #4CAF50;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    a:hover {
+      background-color: #45A049;
+    }
+  </style>
+</head>
+
+<body>
+  <img class="bg-img" src="./assets/hot-5.png" alt="">
+  <div class="container">
+    <div class="logo"><img src="https://aiporn.tw/logo/logo-site.png" alt="AI风月Logo"></div>
+    <h1>AI风月不迷路</h1>
+    <p>以下是备用网站链接，防止网站无法访问：</p>
+    <a id="link1" href="https://aiporn.tw/signup?ref_id=17ec330d-22f6-4b21-95d3-d749a0bf1178" target="_blank">AI风月 -
+      节点1</a>
+    <a id="link2" href="https://aifuck.cc/signup?ref_id=17ec330d-22f6-4b21-95d3-d749a0bf1178" target="_blank">AI风月 -
+      节点2</a>
+    <a id="link3" href="https://aifun.wiki/signup?ref_id=17ec330d-22f6-4b21-95d3-d749a0bf1178" target="_blank">AI风月 -
+      节点3</a>
+
+  </div>
+  <script>
+    // 获取 URL 查询参数
+    const queryParams = new URLSearchParams(window.location.search);
+    // 判断是否存在 ref_id 参数
+    const hasRefId = queryParams.has('ref_id');
+    const refId = queryParams.get('ref_id');
+    // 动态设置备用链接的跳转路径
+    const link1 = document.getElementById('link1');
+    const link2 = document.getElementById('link2');
+    const link3 = document.getElementById('link3');
+    if (hasRefId) {
+      link1.href = `https://aiporn.tw/signup?ref_id=${refId}`;
+      link2.href = `https://aifuck.cc/signup?ref_id=${refId}`;
+      link3.href = `https://aifun.wiki/signup?ref_id=${refId}`;
+    } else {
+      link1.href = 'https://aiporn.tw/signin';
+      link2.href = 'https://aifuck.cc/signin';
+      link3.href = 'https://aifun.wiki/signin';
+    }
+  </script>
+
+
+</body>
+
+</html>

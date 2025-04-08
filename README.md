@@ -1,11 +1,5 @@
-<h3 align="center" style="background: linear-gradient(90deg, #ff00ff, #00ffff, #ff00ff);background-clip: text;text-shadow:
-        0 0 10px rgba(255, 0, 255, 0.5),
-        0 0 20px rgba(0, 255, 255, 0.5)">AI 风月</h3>
-<p style="background: linear-gradient(90deg, #ff00ff, #00ffff, #ff00ff);background-clip: text;text-shadow:
-        0 0 10px rgba(255, 0, 255, 0.5),
-        0 0 20px rgba(0, 255, 255, 0.5)">
-    最大的中文AI色情聊天平台，作品多样性全网最丰富，任何XP都能满足！
-</p>
+<h3 align="center">AI 风月</h3>
+<p>最大的中文AI色情聊天平台，作品多样性全网最丰富，任何XP都能满足！</p>
 
 ![AI风月不迷路](./assets/hot-5.png)
 

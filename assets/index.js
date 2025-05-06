@@ -8,9 +8,9 @@ const links = document.getElementsByClassName('link');
 for (let i = 0; i < links.length; i++) {
 	const link = links[i];
 	if (hasRefId) {
-		link.href = `${link.href}signup?ref_id=${refId}`;
+		link.href = `${link.href}?ref_id=${refId}`;
 	} else {
-		link.href = `${link.href}signin`;
+		link.href = `${link.href}`;
 	}
 }
 

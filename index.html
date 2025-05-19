@@ -74,5 +74,38 @@
 
 </body>
 <script src="./assets//index.js"></script>
-
+<!-- 添加新的脚本用于记录访问统计 -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // 获取URL中的ref_id参数
+    const urlParams = new URLSearchParams(window.location.search);
+    const refId = urlParams.get('ref_id');
+    
+    // 如果URL中包含ref_id参数，则发送请求
+    if (refId) {
+      console.log('发送统计请求, ref_id:', refId);
+      // 发送请求到后端API
+      fetch('https://aifun.wiki/console/api/reg_ref', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          ref_id: refId,
+          ref_type: 'landing'  // 表示这是导流页
+        }),
+        credentials: 'include'  // 包含cookies以处理可能的认证
+      })
+      .then(response => {
+        if (response.ok) {
+          console.log('访问统计请求成功');
+        }
+      })
+      .catch(error => {
+        console.error('访问统计请求失败:', error);
+        // 继续正常页面流程，不影响用户体验
+      });
+    }
+  });
+</script>
 </html>

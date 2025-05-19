@@ -21,5 +21,6 @@ AI 风月提供了丰富的多样性作品，为了确保用户能够顺畅访�
 - <a class="link" href="https://aifun.wiki" target="_blank">AI 风月 - 节点 3</a>
 - <a class="link" href="https://aifuck.cc" target="_blank">AI 风月 - 节点 4</a>
 - <a class="link" href="https://aiporn.tw" target="_blank">AI 风月 - 节点 5</a>
+- <a class="link" href="https://newplace.shop" target="_blank">AI 风月 - 全年龄站</a>
 
 我们承诺作品多样性全网最丰富，致力于为用户提供最佳体验。

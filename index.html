@@ -43,7 +43,7 @@
 
   <div class="container">
     <div class="logo">
-      <img src="./assets/favicon.ico" alt="AI风月Logo">
+      <img src="./assets/avatar.png" alt="AI风月Logo">
     </div>
     <h1>AI风月不迷路</h1>
     <p>以下是备用网站链接，防止网站无法访问：</p>
@@ -76,11 +76,11 @@
 <script src="./assets//index.js"></script>
 <!-- 添加新的脚本用于记录访问统计 -->
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     // 获取URL中的ref_id参数
     const urlParams = new URLSearchParams(window.location.search);
     const refId = urlParams.get('ref_id');
-    
+
     // 如果URL中包含ref_id参数，则发送请求
     if (refId) {
       console.log('发送统计请求, ref_id:', refId);
@@ -96,16 +96,17 @@
         }),
         credentials: 'include'  // 包含cookies以处理可能的认证
       })
-      .then(response => {
-        if (response.ok) {
-          console.log('访问统计请求成功');
-        }
-      })
-      .catch(error => {
-        console.error('访问统计请求失败:', error);
-        // 继续正常页面流程，不影响用户体验
-      });
+        .then(response => {
+          if (response.ok) {
+            console.log('访问统计请求成功');
+          }
+        })
+        .catch(error => {
+          console.error('访问统计请求失败:', error);
+          // 继续正常页面流程，不影响用户体验
+        });
     }
   });
 </script>
+
 </html>

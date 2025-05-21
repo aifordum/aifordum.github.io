@@ -1,0 +1,111 @@
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./assets/image_2025-05-17_16-01-05.png">
+  <meta property="og:title" content="Aiero">
+  <meta name="description" content="Aiero致力于打造全网最好的ai情感交流聊天平台，于2024年8月1日正式上线，以安全，自由，流畅为主打，要给用户最好的交流体验">
+  <meta property="og:description" content="Aiero致力于打造全网最好的ai情感交流聊天平台，于2024年8月1日正式上线，以安全，自由，流畅为主打，要给用户最好的交流体验">
+  <meta name="twitter:title" content="Aiero">
+  <meta name="twitter:description" content="Aiero致力于打造全网最好的ai情感交流聊天平台，于2024年8月1日正式上线，以安全，自由，流畅为主打，要给用户最好的交流体验">
+  <title>AI风月不迷路</title>
+  <link rel="stylesheet" href="./assets/index.css">
+</head>
+
+<body>
+  <div class="banner">
+    <div class="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/img-1.png" alt="Image 1">
+          <img src="./assets/img-2.png" alt="Image 2">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img-3.png" alt="Image 3">
+          <img src="./assets/img-4.png" alt="Image 4">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img-5.png" alt="Image 5">
+          <img src="./assets/img-6.png" alt="Image 6">
+        </div>
+      </div>
+      <!-- 导航按钮 -->
+      <button class="carousel-control prev">&#10094;</button>
+      <button class="carousel-control next">&#10095;</button>
+      <!-- 指示器 -->
+      <div class="carousel-indicators">
+        <span class="indicator active" data-index="0"></span>
+        <span class="indicator" data-index="1"></span>
+        <span class="indicator" data-index="2"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="logo">
+      <img src="./assets/favicon.ico" alt="AI风月Logo">
+    </div>
+    <h1>AI风月不迷路</h1>
+    <p>以下是备用网站链接，防止网站无法访问：</p>
+    <a class="link" href="https://testaf.aiero.cc/" target="_blank">
+      AI风月 - 节点1 -test
+    </a>
+    <a class="link" href="https://acepro.store" target="_blank">
+      AI风月 - 节点2
+    </a>
+    <a class="link" href="https://aifun.wiki" target="_blank">
+      AI风月 - 节点3
+    </a>
+    <a class="link" href="https://aifuck.cc" target="_blank">
+      AI风月 - 节点4（需翻墙）
+    </a>
+    <a class="link" href="https://aiporn.tw" target="_blank">
+      AI风月 - 节点5
+    </a>
+    <a class="link" href="https://newplace.shop" target="_blank">
+      AI风月 - 全年龄节点
+    </a>
+  </div>
+  <p class="description">
+    最大的中文AI色情聊天平台
+    <br>
+    作品多样性全网最丰富，任何XP都能满足！
+  </p>
+
+</body>
+<script src="./assets//index.js"></script>
+<!-- 添加新的脚本用于记录访问统计 -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // 获取URL中的ref_id参数
+    const urlParams = new URLSearchParams(window.location.search);
+    const refId = urlParams.get('ref_id');
+    
+    // 如果URL中包含ref_id参数，则发送请求
+    if (refId) {
+      console.log('发送统计请求, ref_id:', refId);
+      // 发送请求到后端API
+      fetch('https://testaf.aiero.cc/console/api/reg_ref', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          ref_id: refId,
+          ref_type: 'landing'  // 表示这是导流页
+        }),
+        credentials: 'include'  // 包含cookies以处理可能的认证
+      })
+      .then(response => {
+        if (response.ok) {
+          console.log('访问统计请求成功');
+        }
+      })
+      .catch(error => {
+        console.error('访问统计请求失败:', error);
+        // 继续正常页面流程，不影响用户体验
+      });
+    }
+  });
+</script>
+</html>

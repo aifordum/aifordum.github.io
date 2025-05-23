@@ -4,6 +4,12 @@
 [访问 AI 风月](https://aifordum.github.io)
 
 <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+ <img src="./assets/1.jpg" width="48%">
+  <img src="./assets/2.jpg" width="48%">
+  <img src="./assets/3.jpg" width="48%">
+  <img src="./assets/4.jpg" width="48%">
+  <img src="./assets/5.webp" width="48%">
+  <img src="./assets/6.jpg" width="48%">
   <img src="./assets/img-1.png" width="48%">
   <img src="./assets/img-2.png" width="48%">
   <img src="./assets/img-3.png" width="48%">

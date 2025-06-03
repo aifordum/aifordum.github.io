@@ -43,8 +43,8 @@ h1 {
 
 a {
 	display: block;
-	margin: 15px 0;
 	padding: 10px 20px;
+	margin: 5px;
 	text-decoration: none;
 	color: white;
 	background-color: #4caf50;
@@ -161,4 +161,9 @@ a:hover {
 
 .indicator.active {
 	background: white;
+}
+
+.links {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }

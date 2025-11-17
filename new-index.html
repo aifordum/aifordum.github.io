@@ -94,14 +94,6 @@
       </a>
     </li>
     <li class="md:min-w-[88px] flex-shrink-0 h-9 flex justify-center items-center px-0 md:px-3 py-2.5 flex-shrink-0">
-      <a href="#zpsl" class="group w-full h-full flex items-center justify-center relative py-4 text-text-secondary">
-        <span class="block group-hover:hidden">
-          作品实例
-        </span>
-        <img class="hidden group-hover:block" src="./images/zpsl.svg" alt="">
-      </a>
-    </li>
-    <li class="md:min-w-[88px] flex-shrink-0 h-9 flex justify-center items-center px-0 md:px-3 py-2.5 flex-shrink-0">
       <a href="#byym" class="group w-full h-full flex items-center justify-center relative py-4 text-text-secondary">
         <span class="block group-hover:hidden">
           备用域名
@@ -178,8 +170,7 @@
         style="max-width: 100vw;">
     </div>
 
-    <div id="zpsl"
-      class="flex flex-col justify-center items-center mt-[60px] max-w-[798px] mx-auto relative px-4 w-full">
+    <div class="flex flex-col justify-center items-center mt-[60px] max-w-[798px] mx-auto relative px-4 w-full">
       <div
         class="text-zinc-800 text-lg md:text-xl font-semibold font-['PingFang_SC'] leading-[50px] tracking-[5px] md:tracking-[10px]">
         文生图专区
@@ -194,8 +185,6 @@
         开始体验
       </a>
     </div>
-
-
     <div
       class="flex flex-col justify-center items-center mt-[60px] md:mt-[100px] max-w-[762px] mx-auto relative px-4 w-full">
       <div
@@ -220,21 +209,7 @@
         class="text-2xl font-bold bg-gradient-to-r from-[#67B8FF] to-[#0075DC] bg-clip-text text-transparent select-none font-['Douyin_Sans']">
         备用域名
       </div>
-      <div class="w-full flex justify-center items-center gap-4">
-        <span
-          class="flex-1 text-center text-xl font-bold bg-gradient-to-r from-[#67B8FF] to-[#0075DC] bg-clip-text text-transparent select-none font-['Douyin_Sans']">
-          R18
-        </span>
-        <span
-          class="flex-1 text-center text-xl font-bold bg-gradient-to-r from-[#67B8FF] to-[#0075DC] bg-clip-text text-transparent select-none font-['Douyin_Sans']">
-          全年龄
-        </span>
-      </div>
       <div class="w-full inline-flex justify-center items-start pb-[52px]">
-        <ul id="r18-site-list"
-          class="grid grid-cols-1 md:grid-cols-2 gap-[52px] text-base font-normal font-['PingFang_SC'] leading-6 text-text-secondary">
-        </ul>
-        <div class="w-[1px] self-stretch bg-zinc-200 mx-6 md:mx-[62px]">&nbsp;</div>
         <ul id="all-site-list"
           class="grid grid-cols-1 md:grid-cols-2 gap-[52px] text-base font-normal font-['PingFang_SC'] leading-6 text-text-secondary">
         </ul>
@@ -267,15 +242,10 @@
     "https://aiaha.xyz",
   ]
   const allSiteList = document.getElementById('all-site-list');
-  const r18SiteList = document.getElementById('r18-site-list');
 
 
   document.addEventListener('DOMContentLoaded', function () {
-    SITES.forEach((site, index) => {
-      const li = document.createElement('li');
-      li.innerHTML = `<a href="${site}${hasRefId ? `?ref_id=${refId}` : ''}" class="hover:text-primary" target="_blank">AI风月 - 节点${index + 1}</a>`;
-      r18SiteList.appendChild(li);
-    });
+
     SITES.forEach((site, index) => {
       const li = document.createElement('li');
       li.innerHTML = `<a href="${site}${hasRefId ? `?ref_id=${refId}` : ''}" class="hover:text-primary" target="_blank">AI风月 - 节点${index + 1}</a>`;

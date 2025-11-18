@@ -59,10 +59,6 @@
   a[href="#gnts"].nav-active:hover::after {
     display: none;
   }
-  /* 当 zpsl 被 hover 时，nav-active 隐藏 */
-  a[href="#zpsl"].nav-active:hover::after {
-    display: none;
-  }
   /* 当 byym 被 hover 时，nav-active 隐藏 */
   a[href="#byym"].nav-active:hover::after {
     display: none;
@@ -71,7 +67,7 @@
 
 <body>
   <ul
-    class="fixed top-0 left-0 right-0 h-24 py-3 bg-white shadow-[0px_4px_50px_0px_rgba(0,0,0,0.04)] flex justify-center items-center gap-3 md:gap-6 cursor-pointer z-[9999] overflow-x-auto overflow-y-hidden touch-auto"
+    class="fixed top-0 left-0 right-0 h-24 py-3 bg-white shadow-[0px_4px_50px_0px_rgba(0,0,0,0.04)] flex justify-center items-center gap-6 cursor-pointer z-[9999] overflow-x-auto overflow-y-hidden touch-auto"
     style="-webkit-overflow-scrolling: touch;">
     <li class="h-9 flex justify-center items-center px-0 md:px-3 py-2.5 flex-shrink-0">
       <img src="./images/logo.svg" alt="AI风月" class="w-9 h-9 flex-shrink-0">
@@ -177,7 +173,7 @@
       </div>
       <div
         class="text-center justify-start text-[#9F9FA0] text-sm font-normal font-['PingFang_SC'] leading-6 line-clamp-2 px-2 mt-4 mb-[22px]">
-        图片生成文生图文生图文生图文生图文生图文生图文生图文生图文生图文生图文生图文生图文生文生图文生图文生图文生图文生图图文生图文生图文生图文生图文生图文生图文生图文生图文生图
+        一念生万象，妙笔绘佳人。将笔下和处于幻想中的身影，定格于眼前。
       </div>
       <img src="./images/Frame-text-img.png" alt="" class="w-full h-auto max-w-full">
       <a class="absolute bottom-0 px-6 py-2.5 bg-zinc-800 rounded-[48px] outline outline-1 outline-offset-[-0.50px] outline-Stroke-Main inline-flex justify-center items-center max-w-content mx-auto text-sm font-medium font-['PingFang_SC'] leading-5 text-[#FDFDFD] mt-28"
@@ -193,7 +189,7 @@
       </div>
       <div
         class="text-center justify-start text-[#9F9FA0] text-sm font-normal font-['PingFang_SC'] leading-6 line-clamp-2 px-2 mt-4 mb-[22px]">
-        图片生成文生图文生图文生图文生图文生图文生图文生图文生图文生图文生图文生图文生图文生文生图文生图文生图文生图文生图图文生图文生图文生图文生图文生图文生图文生图文生图文生图
+        一行墨生香，万卷皆风月。你的目光所及，便是故事盛开的地方。
       </div>
       <img src="./images/Frame-text-book.png" alt="" class="w-full h-auto max-w-full">
       <a class="absolute bottom-0 px-6 py-2.5 bg-zinc-800 rounded-[48px] outline outline-1 outline-offset-[-0.50px] outline-Stroke-Main inline-flex justify-center items-center max-w-content mx-auto text-sm font-medium font-['PingFang_SC'] leading-5 text-[#FDFDFD] mt-28"
@@ -201,7 +197,6 @@
         开始体验
       </a>
     </div>
-
 
     <div id="byym"
       class="flex flex-col justify-center items-center w-full max-w-[798px] p-5 rounded-2xl shadow-[0px_17px_30px_0px_rgba(0,0,0,0.04)] gap-[22px] mt-[100px] bg-white">
@@ -211,7 +206,7 @@
       </div>
       <div class="w-full inline-flex justify-center items-start pb-[52px]">
         <ul id="all-site-list"
-          class="grid grid-cols-1 md:grid-cols-2 gap-[52px] text-base font-normal font-['PingFang_SC'] leading-6 text-text-secondary">
+          class="grid grid-cols-2 md:grid-cols-4 gap-[52px] text-base font-normal font-['PingFang_SC'] leading-6 text-text-secondary">
         </ul>
       </div>
     </div>
@@ -259,7 +254,6 @@
     const navAnchors = [
       { id: 'wzjs', selector: 'a[href="#wzjs"]' },
       { id: 'gnts', selector: 'a[href="#gnts"]' },
-      { id: 'zpsl', selector: 'a[href="#zpsl"]' },
       { id: 'byym', selector: 'a[href="#byym"]' },
     ];
     // 当前滚动位置

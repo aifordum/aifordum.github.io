@@ -21,10 +21,7 @@
   }
 
   body{
-    background: url('./images/bg.png');
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
+    background-color: #F6F6F7;
   }
 
   @theme {
@@ -32,26 +29,66 @@
     --color-text-primary: #292A2B;
     --color-text-secondary: #9F9FA0;
   }
-  
+  .nav-active {
+    position: relative;
+  }
+
+  .nav-active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary, #1E88E5);
+    transform: translateX(-50%);
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-active:hover::after {
+    width: 50%;
+  }
 </style>
 
 <body>
+  <ul
+    class="fixed top-0 left-0 right-0 h-24 py-3 bg-white shadow-[0px_4px_50px_0px_rgba(0,0,0,0.04)] flex justify-center items-center gap-6 cursor-pointer z-[9999] overflow-x-auto overflow-y-hidden touch-auto"
+    style="-webkit-overflow-scrolling: touch;">
+    <li class="block md:hidden h-9 flex justify-center items-center px-0 md:px-3 flex-shrink-0">
+      <img src="./images/logo.png" alt="AI风月" class="h-9 flex-shrink-0">
+    </li>
+    <li class="hidden md:block h-9 flex justify-center items-center px-0 md:px-3 flex-shrink-0">
+      <img src="./images/logo.png" alt="AI风月" class="h-9 flex-shrink-0">
+    </li>
+    <li
+      class="hidden md:block md:min-w-[88px] flex-shrink-0 h-9 flex justify-center items-center px-0 md:px-3 flex-shrink-0">
+      <a href="#byym"
+        class="w-full h-full flex items-center justify-center relative py-4 text-text-secondary hover:text-primary nav-active">
+        备用域名
+      </a>
+    </li>
+    <li
+      class="hidden md:block md:min-w-[88px] flex-shrink-0 h-9 flex justify-center items-center px-0 md:px-3 flex-shrink-0">
+      <a href="#gnts"
+        class="w-full h-full flex items-center justify-center relative py-4 text-text-secondary hover:text-primary nav-active">
+        功能特色
+      </a>
+
+    </li>
+  </ul>
+
   <div
-    class="fixed top-0 left-0 right-0 h-24 py-3 bg-white shadow-[0px_4px_50px_0px_rgba(0,0,0,0.04)] flex justify-center items-center gap-3 md:gap-6 cursor-pointer z-[9999] overflow-x-auto overflow-y-hidden touch-auto">
-    <div class="w-full max-w-[762px] px-4 md:px-0 mx-auto flex justify-center items-center md:justify-start">
-      <img class="w-12 h-10" src="./images/logo.svg" alt="AI风月">
-    </div>
-  </div>
-  <div class="w-full h-full pt-[132px] content px-4 md:mx-auto flex flex-col justify-start items-center bg-white/60">
+    class="w-full max-w-full overflow-x-hidden pt-[177px] content px-4 md:mx-auto flex flex-col justify-start items-center relative">
+    <img src="./images/bg.png" alt="AI风月" class="absolute w-full top-24 left-0 z-[-1]">
     <div
       class="text-center text-5xl font-bold bg-gradient-to-r from-[#3D93E9] to-[#103C68] bg-clip-text text-transparent select-none font-['Douyin_Sans']">
       AI风月
     </div>
     <div class="text-center text-2xl font-bold font-['HONOR_Sans_CN'] text-text-primary mt-3">
-      AI风月是一款专为广大AI爱好者打造的智能对话平台<br />集AI创作、互动聊天、个性化设定于一体
+      AI风月是全网最大的AI R18私密幻想终端，集无限制AI互动与角色<br />扮演、随心世界创造，无限制图片视频生成
     </div>
     <a id="start-btn"
-      class="px-6 py-2.5 text-sm bg-primary rounded-[48px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.06)] flex justify-center items-center text-white my-[42px]">
+      class="px-6 py-2.5 text-sm font-medium bg-gradient-to-b from-[#87C7FF] to-[#1172C6] rounded-[48px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.06)] flex justify-center items-center text-white my-[42px]">
       开始体验
     </a>
     <div class="w-full flex justify-between md:justify-center items-center gap-1.5 md:gap-[52px] px-0 md:px-2">
@@ -115,7 +152,50 @@
         </a>
       </li>
     </ul>
-    <div class="w-full max-w-[798px] mt-[105px]">
+
+    <div class="flex flex-col justify-center items-center gap-12 mt-[60px]">
+      <div class="text-center text-sm font-normal font-['HONOR_Sans_CN'] leading-6 text-text-secondary">
+        你可以自由打造自己的世界，<br />并用小说故事的模式玩法。<br />AI宇宙支持多种AI模型，<br />例如GPT-4、GPT-4o、Claude-3-5、Gemini、Grok，<br />并不断优化用户体验。<br />平台提供全面的作品创作工具，<br />让用户可以自由定制AI角色、场景、世界观，创造专属于自己的角色扮演互动体验
+      </div>
+      <div class="text-center text-sm font-normal font-['HONOR_Sans_CN'] leading-6 text-text-secondary">
+        厌倦了处处受限的对话和“净化”的剧情？<br />在AI宇宙<br />我们为你提供真正无拘无束的AI聊天与交互体验<br />文字的挑逗已无法满足<br />AI宇宙强大的AI图片与影像生成功能<br />将你的幻想提升到全新维度
+      </div>
+    </div>
+
+    <div id="gnts"
+      class="flex flex-col justify-center items-center mt-[60px] max-w-[798px] mx-auto relative px-4 w-full">
+      <div
+        class="text-zinc-800 text-lg md:text-xl font-semibold font-['PingFang_SC'] leading-[50px] tracking-[5px] md:tracking-[10px]">
+        文生图专区
+      </div>
+      <div
+        class="text-center justify-start text-[#9F9FA0] text-sm font-normal font-['PingFang_SC'] leading-6 line-clamp-2 px-2 mt-4 mb-[22px]">
+        一念生万象，妙笔绘佳人。将笔下和处于幻想中的身影，定格于眼前。
+      </div>
+      <img src="./images/Frame-text-img.png" alt="" class="w-full h-auto max-w-full">
+      <a id="start-img-btn"
+        class="absolute bottom-0 px-6 py-2.5 bg-zinc-800 rounded-[48px] outline outline-1 outline-offset-[-0.50px] outline-Stroke-Main inline-flex justify-center items-center max-w-content mx-auto text-sm font-medium font-['PingFang_SC'] leading-5 text-[#FDFDFD] mt-28">
+        开始体验
+      </a>
+    </div>
+    <div
+      class="flex flex-col justify-center items-center mt-[60px] md:mt-[100px] max-w-[762px] mx-auto relative px-4 w-full">
+      <div
+        class="text-zinc-800 text-lg md:text-xl font-semibold font-['PingFang_SC'] leading-[50px] tracking-[5px] md:tracking-[10px]">
+        小说专区
+      </div>
+      <div
+        class="text-center justify-start text-[#9F9FA0] text-sm font-normal font-['PingFang_SC'] leading-6 line-clamp-2 px-2 mt-4 mb-[22px]">
+        一行墨生香，万卷皆风月。你的目光所及，便是故事盛开的地方。
+      </div>
+      <img src="./images/Frame-text-book.png" alt="" class="w-full h-auto max-w-full">
+      <a id="start-book-btn"
+        class="absolute bottom-0 px-6 py-2.5 bg-zinc-800 rounded-[48px] outline outline-1 outline-offset-[-0.50px] outline-Stroke-Main inline-flex justify-center items-center max-w-content mx-auto text-sm font-medium font-['PingFang_SC'] leading-5 text-[#FDFDFD] mt-28">
+        开始体验
+      </a>
+    </div>
+
+    <div id="byym" class="w-full max-w-[798px] mt-[105px]">
       <div
         class="text-center text-2xl font-bold bg-gradient-to-r from-[#3D93E9] to-[#103C68] bg-clip-text text-transparent select-none font-['Douyin_Sans'] mb-[31px]">
         备用域名
@@ -166,6 +246,22 @@
     });
 
     startBtn.href = `https://${randomSite}${hasRefId ? `?ref_id=${refId}` : ''}`;
+  });
+
+  function smoothScroll(target) {
+    const targetElement = document.getElementById(target);
+    if (targetElement) {
+      const yOffset = -126; // 假设导航栏高度为 24 * 4 = 96px
+      const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      smoothScroll(this.getAttribute('href').substring(1));
+    });
   });
 </script>
 

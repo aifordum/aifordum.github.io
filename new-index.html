@@ -73,7 +73,6 @@
         class="w-full h-full flex items-center justify-center relative py-4 text-text-secondary hover:text-primary nav-active">
         功能特色
       </a>
-
     </li>
   </ul>
 
@@ -237,6 +236,8 @@
   const randomSite = RANDOM_SITES[Math.floor(Math.random() * RANDOM_SITES.length)];
   const allSiteList = document.getElementById('all-site-list');
   const startBtn = document.getElementById('start-btn');
+  const startImgBtn = document.getElementById('start-img-btn');
+  const startBookBtn = document.getElementById('start-book-btn');
 
   document.addEventListener('DOMContentLoaded', function () {
 
@@ -247,6 +248,8 @@
     });
 
     startBtn.href = `https://${randomSite}${hasRefId ? `?ref_id=${refId}` : ''}`;
+    startImgBtn.href = `https://${randomSite}${hasRefId ? `?ref_id=${refId}` : ''}`;
+    startBookBtn.href = `https://${randomSite}${hasRefId ? `?ref_id=${refId}` : ''}`;
   });
 
   function smoothScroll(target) {
